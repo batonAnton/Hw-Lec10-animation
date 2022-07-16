@@ -1,0 +1,31 @@
+.wrapper{
+    display:flex;
+    justify-content: center;
+}
+.block{
+    background-color: black;
+    width: 500px;
+    height: 500px;
+}
+
+hr{
+    background-color: #fff;
+    width: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.first-line{
+    margin-top: 50%;
+    margin-bottom: 20px;
+    animation-name: cross-line;
+    animation-duration: 4s;
+    animation-iteration-count: calc(2);
+}
+
+@keyframes cross-line{
+    to{
+        rotate: 30%;
+    }
+}

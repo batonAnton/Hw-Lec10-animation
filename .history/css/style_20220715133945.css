@@ -1,0 +1,88 @@
+.wrapper{
+    display:flex;
+    justify-content: center;
+    position: relative;
+}
+.block{
+    background-color: black;
+    width: 500px;
+    height: 500px;
+    display:flex;
+    justify-content: center;
+}
+
+.cross-line{
+    width: 100px;
+    height: 100px;
+    top: 50%;
+    position:absolute;
+}
+
+hr{
+    background-color: #fff;
+    width: 100px;
+}
+
+.first-line{
+    margin-bottom: 20px;
+    animation-name: cross-line1;
+    animation-duration: 1s;
+    animation-fill-mode:forwards ;
+    animation-iteration-count:infinite;
+    animation-play-state: paused;
+
+}
+
+.second-line{
+    animation-name: cross-line2;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+}
+
+ 
+
+@keyframes cross-line1{
+    /* 0%{
+        transform: rotate(0);
+    }
+
+    50%{
+        transform:rotate(45deg);
+    }
+
+    100%{
+        transform:rotate(0);
+    } */
+    to{
+        transform: rotate(-45deg);
+    }
+}
+ 
+@keyframes cross-line2{
+    0%{
+        transform: rotate(0);
+    }
+
+    50%{
+        transform:rotate(-45deg);
+    }
+
+    100%{
+        transform:rotate(0);
+    }
+}
+
+.cross-line:hover .first-line {
+    animation: cross-line1 2s linear;
+    animation-play-state: running;
+    cursor: pointer;
+}
+.cross-line:hover .second-line {
+    animation: cross-line2 2s linear;
+    animation-play-state: running;
+    cursor: pointer;
+
+
+
+}

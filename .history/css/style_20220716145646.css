@@ -1,0 +1,79 @@
+.wrapper{
+    display:flex;
+    justify-content: center;
+    position: relative;
+}
+.block{
+    background-color: black;
+    width: 500px;
+    height: 500px;
+    display:flex;
+    justify-content: center;
+}
+
+.cross-line{
+    width: 100px;
+    height: 100px;
+    top: 50%;
+    position:absolute;
+}
+
+hr{
+    background-color: #fff;
+    width: 100px;
+}
+
+.second-line{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.second-line{
+    transition: all 0.3s ease-in-out;
+   
+}
+
+.third-line{
+    transition: all 0.3s ease-in-out;
+}
+
+
+ 
+
+
+.cross-line:hover .first-line {
+    box-shadow: 0.4em 0 0.6em 0.2em rgb(190, 40, 204);
+    transition: all 0.3s ease-in-out;
+    transform: translateY(18px) translateX(0px) rotate(45deg);
+    
+
+}
+.cross-line:hover .second-line {
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0.4em 0 0.6em 0.2em rgb(190, 40, 204);
+    transform: translateY(-3px) translateX(0px) rotate(-45deg);
+}
+
+.cross-line:hover .third-line{
+    transition: all 0.3s ease-in-out;
+    transform: translateY(-26px) translateX(0px) rotate(-45deg);
+}
+
+/* circle */
+
+.allcircle{
+    background-color: wheat;
+    height: 500px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: c;
+}
+.circle{
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    background-color: rgb(46, 111, 49);
+}

@@ -1,0 +1,51 @@
+.wrapper{
+    display:flex;
+    justify-content: center;
+    position: relative;
+}
+.block{
+    background-color: black;
+    width: 500px;
+    height: 500px;
+    display:flex;
+    justify-content: center;
+}
+
+.cross-line{
+    width: 100px;
+    height: 100px;
+    top: 50%;
+    position:absolute;
+}
+
+hr{
+    background-color: #fff;
+    width: 100px;
+}
+
+.first-line{
+    margin-bottom: 20px;
+    
+    transition: all 0.3s ease-in-out;
+
+}
+
+.second-line{
+    transition: all 0.3s ease-in-out;
+}
+
+ 
+
+
+
+.cross-line:hover .first-line {
+    
+    transform: rotate(-45deg);
+    transition: all 0.3s ease-in-out;
+    
+
+}
+.cross-line:hover .second-line {
+    transform: rotate(45deg);
+    transition: all 0.3s ease-in-out;
+}
